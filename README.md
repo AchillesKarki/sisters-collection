@@ -2,4 +2,4 @@
 
 * This is a simple one page website for a beauty salon.
 * This website was built using HTML, CSS, Bootstrap, Jquery.
-* Demo can be found here: https://sisterscollection.netlify.com
+* Demo can be found here: https://sisters-collection.netlify.com

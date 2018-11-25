@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sisters Collection</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|K2D|Roboto|Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- navbar header section: navbar brand and hamburger icon -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/brand.png" alt="Brand Image"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <p class="navbar-left" id="welcomeMessage">WELCOME</p>
+                <p class="navbar-left logout" id="logout">LOGOUT</p>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#teams">STYLIST</a></li>
+                    <li><a href="#booking">BOOKING</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- home page content -->
+    <section id="home">
+        <div class="jumbotron">
+            <div class="container heading">
+                <p class="title"><span style="color:#e35dd5">SISTERS</span> COLLECTION</p>
+                <p class="desc">Sisters Collection beauty salon presents you their best
+                    in class beauty services where we excel in taking away
+                    the pain of finding the right beauty expert, right at the
+                    comfort of your home.</p>
+            </div>
+            <!-- <div class="container home-page-buttons">
+                <button class="btn btn-primary btn-large" id="signUpButton">Sign Up</button>
+                <button class="btn btn-primary btn-large" data-toggle="modal" data-target="#loginModal">Login</button>
+            </div> -->
+            <!-- Sign Up Modal -->
+            <div id="signUpModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Sign Up</h4>
+                        </div>
+                        <form action="">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="username">Username:</label>
+                                    <input type="text" name="username" id="username" class="form-control" placeholder="Enter your username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Enter your password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm Password:</label>
+                                    <input type="password" name="confirmPassword" id="confirmPassword" class="form-control"
+                                        placeholder="Confirm password">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a data-dismiss="modal" data-toggle="modal" data-target="#loginModal" style="float:left;font-size: 16px;text-decoration: none;cursor: pointer">Already
+                                    have an account?</a>
+                                <button type="submit" class="btn btn-success" data-dismiss="modal">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Login Modal -->
+            <div id="loginModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Login</h4>
+                        </div>
+                        <form action="">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a data-dismiss="modal" style="float:left;font-size: 16px;text-decoration: none;cursor: pointer">Forgot
+                                    Password?</a>
+                                <button type="submit" class="btn btn-success" data-dismiss="modal">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid home-description">
+            <h1>Salon at home services provided by Sisters collection
+                and their benefits</h1>
+            <p>Being a woman means juggling with lots of responsibilities. It's difficult to carve out time for
+                yourself. We tried to make it a bit easier for you. We provide trustworthy professionals at your
+                doorstep. We connect you with experts in your locality who present Beauty services at your convenience.</p>
+            <a class="btn btn-large" href="#booking" style="text-decoration:none;color:#fff">Book Appointment</a>
+        </div>
+    </section>
+    <!-- home page content end -->
+
+    <!-- services page content -->
+    <section id="services">
+        <div class="container-fluid service-page">
+            <div class="services-header">
+                <h1>Our Services</h1>
+                <p>With Us you can enjoy the benefits of following beauty services at home</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="sh1">
+                        <h2>Threading</h2>
+                    </div>
+                    <p>Threading at home service is used to get rid of all the unwanted and outgrown hair on your face.
+                        This service can be used to trim your eyebrows, upperlips and facial hair.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="sh1">
+                        <h2>Waxing</h2>
+                    </div>
+                    <p>Waxing is similar to threading as it is user to get rid of unwanted and outgrown hair on your
+                        entire body. Waxing is done by applying was on the hair and pulling it off using strips.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="sh1">
+                        <h2>Manicure and Pedicure</h2>
+                    </div>
+                    <p>There are various types of manicure and pedicure depending upon the nourishment that your hands
+                        and feet require. In Manicure the beautician does scrub wash of your hands, trims your nails
+                        and takes care of the above along with getting rid of dead skin accumulated on your feet, heels
+                        etc.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="sh1">
+                        <h2>Pedicure</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt sit quod culpa natus
+                        necessitatibus velit et molestiae quidem, eum temporibus quam accusamus modi. Ratione
+                        praesentium
+                        veniam laborum. Fugit quasi maiores libero adipisci nisi ad officiis maxime sint aperiam eaque,
+                        cupiditate mollitia voluptatibus cumque quidem.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="sh1">
+                        <h2>Facial</h2>
+                    </div>
+                    <p>Facial services are used to take care of the nourishment of face by doing scrubbing, steaming,
+                        face massage and ending it by applying face mask. Facial helps in improving the appearance of
+                        the skin along with care and nourishment.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="sh1">
+                        <h2>Manicure</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt sit quod culpa natus
+                        necessitatibus velit et molestiae quidem, eum temporibus quam accusamus modi. Ratione
+                        praesentium
+                        veniam laborum. Fugit quasi maiores libero adipisci nisi ad officiis maxime sint aperiam eaque,
+                        cupiditate mollitia voluptatibus cumque quidem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-description">
+            <h1>We are there for you</h1>
+            <p>In order to get the above mentioned services done, all you need to do is let
+                us know your requirement and our experts promise you 100% satisfaction at a very reasonable price. We
+                guarantee you painfree, hassle free and hygienic home services.</p>
+        </div>
+    </section>
+    <!-- services page content end-->
+
+    <!-- stylist page content -->
+    <section id="teams" class="section teams">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="">Stylist</h1>
+                <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                    eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+            <div class="row" style="text-align: -webkit-center;">
+                <div class="col-md-3 col-sm-6">
+                    <div class="person"><img src="images/team-1.jpg" alt="img" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Hair Stylist</h4>
+                            <h5 class="role">Sr Surgon</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person"> <img src="images/team-2.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Hair Stylist</h4>
+                            <h5 class="role">Master</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person"> <img src="images/team-3.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Massage</h4>
+                            <h5 class="role">Aerobic</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person"> <img src="images/team-4.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Skin Care</h4>
+                            <h5 class="role">Marketing</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stylist page content end-->
+
+    <!-- booking page content -->
+    <section id="booking">
+        <div class="container">
+            <div class="booking-header">
+                <h1>Book Your Day</h1>
+            </div>
+            <div class="bookin-desc">
+                <h4>You can book your beauty services at your
+                    convenient time. Enter your contact details, choose
+                    the service needed and wait for us to call you back.
+                    Our beauticians will arrive at your residence with
+                    everything.</h4>
+            </div>
+            <div class="container" id="mainContainer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-xs">
+                            <form class="form-horizontal" action="https://formspree.io/info@sursatech.com" method="POST">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 col-xs-2 col-xs-offset-1  text-center"><i
+                                                class="fa fa-user bigicon"></i></span>
+                                        <div class="col-xs-8">
+                                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control"
+                                                autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 col-xs-2 col-xs-offset-1  text-center"><i
+                                                class="fa fa-envelope-o bigicon"></i></span>
+                                        <div class="col-xs-8">
+                                            <input id="email" name="email" type="text" placeholder="Email Address"
+                                                class="form-control" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 col-xs-2 col-xs-offset-1  text-center"><i
+                                                class="fa fa-phone-square bigicon"></i></span>
+                                        <div class="col-xs-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 col-xs-2 col-xs-offset-1  text-center"><i
+                                                class="fa fa-calendar-o bigicon"></i></span>
+                                        <div class="col-xs-8">
+                                            <input id="date" name="date" type="date" placeholder="Enter Your Preferred Date"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 col-xs-2 col-xs-offset-1  text-center"><i
+                                                    class="fa fa-clock-o bigicon"></i></span>
+                                            <div class="col-xs-8">
+                                                <input id="time" name="time" type="time" placeholder="Enter Your Preferred Time"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 col-xs-2 col-xs-offset-1  text-center"><i
+                                                class="fa fa-pencil-square-o bigicon"></i></span>
+                                        <div class="col-xs-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Your message"
+                                                rows="7"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-12 text-center">
+                                            <button type="reset" class="btn btn-success" style="margin-right:10px;">Reset</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- booking page content end-->
+
+    <!-- footer -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4 class="logo"><a href="#"><img id="mainLogoFooter" src="images/brand.png"></a><br>
+                        <h3>Sisters Collection</h3>
+                    </h4>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#"">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 All Rights Reserved </p>
+        </div>
+    </footer>
+    <!-- footer end-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if (window.pageYOffset > 100) {
+                    $(".navbar-inverse").css('background-color', 'rgba(0, 0, 0, 0.96)');
+                } else {
+                    $(".navbar-inverse").css('background-color', 'rgba(0, 0, 0, 0.6)');
+                }
+            });
+
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('#signUpButton').click(function () {
+                window.location.href = "signup.html";
+            });
+
+            $('#welcomeMessage').hide();
+            $('#logout').hide();
+        })
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
